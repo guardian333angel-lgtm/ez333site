@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystical Grimoire</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Tabs -->
+    <nav class="tab-container">
+        <button class="tab-btn" data-page="grimoire">Grimoire</button>
+        <button class="tab-btn" data-page="angels">Angels/Demons</button>
+        <button class="tab-btn" data-page="sonics">Sonics</button>
+        <button class="tab-btn" data-page="about">About</button>
+    </nav>
+
+    <!-- Star Background -->
+    <div class="stars-container" id="starsContainer"></div>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <!-- Home Page -->
+        <div id="content-home" class="page-content active">
+            <div class="triangle-container">
+                <div class="rainbow-triangle clickable-triangle">
+                    <div class="triangle-text"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portal Page -->
+        <div id="content-portal" class="page-content">
+            <button class="back-arrow">⮜</button>
+            <div class="portal-page">
+                <audio id="portal-audio">
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+        <!-- Grimoire Page -->
+        <div id="content-grimoire" class="page-content">
+            <!-- Grimoire GIF View -->
+            <div id="grimoire-gif-view" class="grimoire-view">
+                <div class="gif-container grimoire-toggle">
+                    <img src="your-gif.gif" alt="Grimoire" class="centered-gif">
+                    <div class="gif-overlay-text">?</div>
+                </div>
+            </div>
+
+            <!-- Grimoire Paper View -->
+            <div id="grimoire-paper-view" class="grimoire-view active">
+                <button class="back-arrow grimoire-toggle">⮜</button>
+                <div class="paper-page grimoire-toggle">
+                    <div class="paper-content">
+                        <h1>Ancient Grimoire</h1>
+                        <p>The secrets written in these pages have been guarded for centuries.</p>
+                        <p>Each spell, each incantation, each ritual is a gateway to forbidden knowledge.</p>
+                        <p>Enter at your own peril, for once you begin to read, you cannot unread.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Angels/Demons Page -->
+        <div id="content-angels" class="page-content">
+            <!-- Angels/Demons GIF View -->
+            <div id="angels-gif-view" class="angels-view">
+                <div class="gif-container angels-toggle">
+                    <img src="your-gif.gif" alt="Angels/Demons" class="centered-gif">
+                    <div class="gif-overlay-text">?</div>
+                </div>
+            </div>
+
+            <!-- Angels/Demons Split Page View -->
+            <div id="angels-split-view" class="angels-view active">
+                <button class="back-arrow angels-toggle">⮜</button>
+                <div class="split-page angels-toggle">
+                    <div class="split-top">
+                        <div class="split-content">
+                            <h1>Angels</h1>
+                            <p>Celestial beings of light and grace.</p>
+                            <p>Guardians of the divine realm.</p>
+                        </div>
+                    </div>
+                    <div class="split-bottom">
+                        <div class="split-content">
+                            <h1>Demons</h1>
+                            <p>Entities of shadow and chaos.</p>
+                            <p>Dwellers of the infernal depths.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sonics Page -->
+        <div id="content-sonics" class="page-content">
+            <button class="back-arrow">⮜</button>
+            <div class="construction-page">
+                <div class="construction-lights"></div>
+                <div class="construction-text">under construction :3</div>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="content-about" class="page-content">
+            <button class="back-arrow">⮜</button>
+            <div class="construction-page">
+                <div class="construction-lights"></div>
+                <div class="construction-text">under construction :3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
